@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <body background="assets\images\waterfall.jpg">
+        <header>
+            <button type="button" class="btn btn-primary">Start Game</button>
+            <div id="mainhead">
+                <h1>Crystal Collector!</h1>
+            </div>
+
+
+        </header>
+        <section>
+
+            <!-- Start game button -->
+            <div id="gameinstructions">
+                <p>
+                    Press START to begin game and you will be given a random number.  </p>
+                <br>
+                <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                    total score.
+                </p>
+                <br>
+                <p> You win the game by matching your total score to random</p>
+                <p> number, you lose the game if your total score goes above the random number.
+                </p>
+                <br>
+                <p> The value of each crystal is hidden from you until you click on it</p>
+                <br>
+                <p>Each time when the game starts, the game will change the values of each crystal.
+                </p>
+            </div>
+        </section>
+
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Number to Guess:
+                            <span id="guessNumber"></span>
+                        </h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Wins:
+                            <span id="wins"></span>
+                        </h2>
+                        <br>
+                        <br>
+                        <h2>Losses:
+                            <span id="Losses"></span>
+                        </h2>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <aside>
+
+        </aside>
+
+        <div class="crystalcontainer">
+            <img id="crystal1" src="assets\images\crystal1.jpg">
+            <img id="crystal2" src="assets\images\crystal2.jpg">
+            <img id="crystal3" src="assets\images\crystal3.jpg">
+            <img id="crystal4" src="assets\images\crystal4.jpg">
+        </div>
+        <div id="scorecontainer">
+            <h3>Your total score is:</h3>
+        </div>
+        <div id="totalscore">
+
+        </div>
+
+
+    </body>
+
+</body>
+
+</html>
